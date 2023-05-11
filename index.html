@@ -1,0 +1,399 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/boxicons.min.css">
+   <link rel="stylesheet" href="css/style.css">
+   <script src="js/bootstrap.bundle.min.js"></script>
+
+   <link rel="icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Euskotren_1K.svg/1280px-Euskotren_1K.svg.png"
+      type="image/x-icon">
+   <title>1kyaw</title>
+
+   <style>
+      @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+   
+      body {
+         line-height: 1.8;
+         color: #202020;
+         font-size: 15px;
+         font-family: 'Lato', sans-serif;
+      }
+   
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+         font-weight: 700;
+         letter-spacing: 1px;
+         text-transform: uppercase;
+         color: #2d313a;
+      }
+   
+      .title-sm {
+         font-size: 16px;
+         letter-spacing: 1px;
+      }
+   
+      a {
+         font-weight: 700;
+         transition: all 0.4s ease;
+         text-decoration: none;
+      }
+   
+      img {
+         width: 100%;
+      }
+   
+      small {
+         font-size: 12px;
+         letter-spacing: 2px;
+         font-weight: 700;
+         text-transform: uppercase;
+      }
+   
+      section {
+         padding-top: 100px;
+         padding-bottom: 100px;
+      }
+   
+      .navbar {
+         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      }
+   
+      .logo-text {
+         font-size: 22px;
+         text-transform: uppercase;
+         color: #ffc107 !important;
+      }
+   
+      .navbar .nav-link {
+         font-size: 0.9em;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+      }
+   
+      .navbar-light .navbar-nav .nav-link.active {
+         color: #268ceb;
+      }
+   
+      span {
+         color: gold;
+      }
+   
+      #home {
+         background: linear-gradient(rgba(53, 57, 66, 0.8), rgba(73, 111, 216, 0.8)), url(https://img.freepik.com/premium-vector/group-college-university-students_504403-219.jpg?w=2000);
+         min-height: 100vh;
+         background-size: cover;
+         background-position: center;
+         background-attachment: fixed;
+         background-repeat: no-repeat;
+         display: flex;
+         align-items: center;
+      }
+   
+      #home h1 {
+         font-weight: 700;
+      }
+   
+      #home p {
+         max-width: 550px;
+         margin: 18px auto;
+      }
+   
+      .btn {
+         font-weight: 700;
+         font-size: 12px;
+         text-transform: uppercase;
+         padding: 12px 28px;
+         border-radius: 0;
+      }
+   
+      .btn-brand {
+         background-color: #268ceb;
+         color: #fff;
+      }
+   
+      .btn-brand:hover {
+         background-color: #268ceb;
+         color: #000;
+      }
+   
+      .section-intro {
+         text-align: center;
+         margin-bottom: 60px;
+      }
+   
+      .section-intro .hline {
+         width: 120px;
+         height: 2px;
+         background-color: gold;
+         margin: 16px auto 0 auto;
+      }
+   
+      .icon-box {
+         width: 60px;
+         height: 60px;
+         background-color: #268ceb;
+         color: #fff;
+         border-radius: 4px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         font-size: 32px;
+         flex: none;
+      }
+   
+      .assistance-item {
+         overflow: hidden;
+         position: relative;
+         border: 5px solid #2d313a;
+      }
+   
+      .assistance-item img,
+      .assistance-item .assistance-overlay {
+         transition: all 0.4s ease;
+      }
+   
+      .assistance-overlay {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: rgba(17, 36, 90, 0.9);
+         display: flex;
+         align-items: flex-end;
+         padding: 30px;
+         opacity: 0;
+      }
+   
+      .assistance-overlay h3,
+      .assistance-overlay h6 {
+         color: #fff;
+      }
+   
+      .assistance-item:hover .assistance-overlay {
+         opacity: 1;
+      }
+   
+      .assistance-item:hover img {
+         transform: scale(1.1);
+      }
+   
+      .requirements .icon-box {
+         width: 34px;
+         height: 34px;
+         border-radius: 100px;
+         font-size: 24px;
+      }
+   
+   
+      .footer {
+         padding-top: 30px;
+         padding-bottom: 30px;
+         border-top: 1px solid rgba(0, 0, 0, 0.1);
+      }
+   </style>
+   
+</head>
+
+
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+
+   <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+         <a class="navbar-brand logo-text" href="#home">Iskolarsyip</a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+
+               <li class="nav-item">
+                  <a class="nav-link" href="#home">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#assistance">Assistance</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#requirements">Requirements</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+
+   <section id="home">
+      <div class="container text-center">
+         <div class="row justify-content-center">
+            <div class="col-md-10">
+               <h1 class="text-white display-4"><span>5kyaw</span> Educational Assistance</h1>
+               <p class="text-white">"Education is the key that unlocks the doors of opportunity, and scholarships are
+                  the catalyst that ignites the flames of brilliance."</p>
+               <a href="#assistance" class="btn btn-brand">Apply</a>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section id="assistance" class="row g-0 py-0">
+      <div class="col-lg-4 col-sm-6">
+         <div class="assistance-item">
+            <img
+               src="https://img.freepik.com/free-vector/focused-tiny-people-reading-books_74855-5836.jpg?w=1060&t=st=1683781622~exp=1683782222~hmac=eab3568e06d91b4f7a7273f4950683c191d5bc1561274049eecf44a5db600a94"
+               alt="">
+            <div class="assistance-overlay">
+               <div>
+                  <h3>Junior High School</h3>
+                  <h6>Educational Assistance</h6>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+         <div class="assistance-item">
+            <img
+               src="https://img.freepik.com/free-vector/focused-tiny-people-reading-books_74855-5836.jpg?w=1060&t=st=1683781622~exp=1683782222~hmac=eab3568e06d91b4f7a7273f4950683c191d5bc1561274049eecf44a5db600a94"
+               alt="">
+            <div class="assistance-overlay">
+               <div>
+                  <h3>Senior High School</h3>
+                  <h6>Educational Assistance</h6>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+         <div class="assistance-item">
+            <img
+               src="https://img.freepik.com/free-vector/focused-tiny-people-reading-books_74855-5836.jpg?w=1060&t=st=1683781622~exp=1683782222~hmac=eab3568e06d91b4f7a7273f4950683c191d5bc1561274049eecf44a5db600a94"
+               alt="">
+            <div class="assistance-overlay">
+               <div>
+                  <h3>College</h3>
+                  <h6>Educational Assistance</h6>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section id="requirements">
+      <div class="container">
+         <div class="row">
+            <div class="col-12 section-intro">
+               <h1>Requirements</h1>
+               <div class="hline"></div>
+            </div>
+         </div>
+         <div class="row gy-4">
+            <div class="col-lg-4 col-sm-6 requirements d-flex">
+               <div class="icon-box me-3">
+                  <i class="bx bx-check"></i>
+               </div>
+               <div>
+                  <h5 class="title-sm">Registration Form/Proof of Enrollment</h5>
+                  <p>Proof of enrollment is a document that verifies an individual's current or past registration and attendance in an educational institution or program.</p>
+               </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 requirements d-flex">
+               <div class="icon-box me-3">
+                  <i class="bx bx-check"></i>
+               </div>
+               <div>
+                  <h5 class="title-sm">Birth Certificate</h5>
+                  <p>A birth certificate is an official document that provides legal proof of a person's birth, containing information such as their name, date and place of birth, and the names of their parents.</p>
+               </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 requirements d-flex">
+               <div class="icon-box me-3">
+                  <i class="bx bx-check"></i>
+               </div>
+               <div>
+                  <h5 class="title-sm">Certificate of Good Moral Character</h5>
+                  <p>A certificate of good moral character is an official document issued by an institution, that attests to an individual's reputation, and behavior.</p>
+               </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 requirements d-flex">
+               <div class="icon-box me-3">
+                  <i class="bx bx-check"></i>
+               </div>
+               <div>
+                  <h5 class="title-sm">Grade Report/Report of Ratings</h5>
+                  <p>A grade report or report of ratings is an official document that provides a summary of their grades or scores achieved in specific courses or subjects during a particular period of time. </p>
+               </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 requirements d-flex">
+               <div class="icon-box me-3">
+                  <i class="bx bx-check"></i>
+               </div>
+               <div>
+                  <h5 class="title-sm">2X2 Picture</h5>
+                  <p>A 2x2 picture refers to a small photograph measuring 2 inches by 2 inches, often required for identification purposes such as passports, visas, or official documents.</p>
+               </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 requirements d-flex">
+               <div class="icon-box me-3">
+                  <i class="bx bx-check"></i>
+               </div>
+               <div>
+                  <h5 class="title-sm">Vicinity Map</h5>
+                  <p>A vicinity map is a visual representation or diagram that provides an overview of the surrounding area, or geographical features to assist in locating a specific place or address.</p>
+               </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 requirements d-flex">
+               <div class="icon-box me-3">
+                  <i class="bx bx-check"></i>
+               </div>
+               <div>
+                  <h5 class="title-sm">Barangay Clearance</h5>
+                  <p>A barangay clearance is an official document issued by the barangay certifying that an individual is a resident of the barangay and attesting to their good moral character.</p>
+               </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 requirements d-flex">
+               <div class="icon-box me-3">
+                  <i class="bx bx-check"></i>
+               </div>
+               <div>
+                  <h5 class="title-sm">Parents Voter's Certification</h5>
+                  <p>A parent's voter's certification is an official document verifying that an individual's parents are registered voters, required for various purposes such as education assistance.</p>
+               </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 requirements d-flex">
+               <div class="icon-box me-3">
+                  <i class="bx bx-check"></i>
+               </div>
+               <div>
+                  <h5 class="title-sm">Income Tax Return</h5>
+                  <p>An income tax return is a document filed with the tax authorities that provides details of an individual or entity's income, deductions, and tax liability for a specific tax year.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <div class="footer">
+      <div class="container">
+         <div class="row justify-content-between gy-3">
+            <div class="col-md-6">
+               <p class="mb-0">Montablan, Allen M.</p>
+            </div>
+            <div class="col-auto">
+               <p class="mb-0">IT Elective 2 | BSIT 3-1</p>
+            </div>
+         </div>
+      </div>
+   </div>
+   </footer>
+
+</body>
+
+</html>
